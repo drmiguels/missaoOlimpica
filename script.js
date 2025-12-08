@@ -20,7 +20,7 @@ let historiaFinal = "";
 
 //Assim como a variável atual (acima)
 //Crie uma variável com o nome pontos que inicie com 0
-
+CaixaPrincipal.style.backgroundImage = "url('3 pontos é bronze')";
 
 function mostraPergunta(){
     if(atual >= perguntas[escolha].length){
@@ -82,4 +82,4 @@ function mostraResultado(){
 
 mostraPergunta(); 
 
-caixaPrincipal.style.backgroundImage="url('img/bronze.png')";
+
