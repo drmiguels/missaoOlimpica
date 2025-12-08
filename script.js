@@ -1,8 +1,8 @@
-const modalidades = ["Ginástica", "Judô", "Surfe", "Vôlei"];
+const modalidades = [0"Ginástica", 1"Judô", 2"Surfe", 3"Vôlei"];
 
 //Com base na constante modalidade, 
 //Coloque o número que represente o esporte do seu grupo
-const escolha = ?;
+const escolha = 1;
 
 document.querySelector('body').style.backgroundImage = "url('img/"+modalidades[escolha]+".png')";
 document.querySelector('title').textContent = "Missão Olímpica | "+modalidades[escolha];
@@ -81,3 +81,5 @@ function mostraResultado(){
 //     Quando ouro coloque "Resultado da competição: 3 pontos é BRONZE!";
 
 mostraPergunta(); 
+
+caixaPrincipal.style.backgroundImage="url('img/bronze.png')";
