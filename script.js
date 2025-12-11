@@ -20,7 +20,29 @@ let historiaFinal = "";
 
 //Assim como a variável atual (acima)
 //Crie uma variável com o nome pontos que inicie com 0
-CaixaPrincipal.style.backgroundImage = "url('3 pontos é bronze')";
+let pontos = "0"
+
+if (pontos === 3) {
+        caixaPrincipal.style.backgroundImage = "url('img/bronze.png')";
+        caixaPerguntas.textContent = "Resultado da competição: 3 pontos é BRONZE!";
+    }
+
+    if (pontos === 4) {
+        caixaPrincipal.style.backgroundImage = "url('img/prata.png')";
+        caixaPerguntas.textContent = "Resultado da competição: 4 pontos é PRATA!";
+    }
+
+    if (pontos === 5) {
+        caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
+        caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
+    }
+
+    if (pontos < 3) {
+        caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
+        caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
+    }
+
+    function podium Medalhas() {
 
 function mostraPergunta(){
     if(atual >= perguntas[escolha].length){
@@ -78,8 +100,14 @@ function mostraResultado(){
 //    caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
 //    altere o textContent do caixaPerguntas para "Resultado da competição: PERDEU!";
 //2 Dentro de cada SE altere o conteúdo de texto de caixaPerguntas exemplo
-//     Quando ouro coloque "Resultado da competição: 3 pontos é BRONZE!";
+//     Quando ouro coloque "Resultado da competição: 3 pontos é BRONZE!"
 
-mostraPergunta(); 
+podium Medalhas(); 
 
-
+function mostraResultado(){
+    textoResultado.textContent = historiaFinal;
+    caixaPerguntas.textContent = "Resultado";
+    caixaAlternativas.textContent = "";
+    
+    podiumMedalhas(); // ✔️ slide pediu isso
+}
